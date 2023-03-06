@@ -1,7 +1,7 @@
 :root {
   --blue: #6495ed;
   --white: #faf0e6; 
-  --yellow: rgb(255, 255, 236);
+  --yellow: rgb(255, 255, 201);
   --grey:#e1e1e1;
 }
 
@@ -24,9 +24,11 @@ body {
   #row1{
     background-color: var(--white);
   }
+
   #row2{
     background-color: var(--yellow);
   }
+  
   .card {
     width: 100%;
     height: auto;
