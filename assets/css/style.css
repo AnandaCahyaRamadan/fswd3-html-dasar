@@ -14,9 +14,10 @@ body {
     --main-padding:0;
     padding: var(--main-padding);
     margin: auto;
-    display: grid;
+    display: inline-block;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto) ;
+    grid-template-rows: repeat(2, auto) ; */
     margin: 5px 15px;
     gap:20px;
     position: relative;
@@ -31,9 +32,10 @@ body {
   }
   
   .card {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+    height:400px;
+    width: 23%;
+    float:right;
+    margin: 10px 1%;
     border-radius: 15px;
     position: relative;
     box-shadow: 0 10px 10px rgba(0,0,0,.1);
