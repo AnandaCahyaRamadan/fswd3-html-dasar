@@ -11,7 +11,8 @@ body {
 }
 
 .container {
-    padding: 0;
+    --main-padding:0;
+    padding: var(--main-padding);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
