@@ -30,6 +30,8 @@
     background-color: blueviolet;
     align-self: flex-start;
     flex-basis: 50px;
+    height: 50px;
+    margin-top: 120px;
 
   }
 
@@ -40,16 +42,15 @@
   }
   .item5{
     background-color: rgb(38, 4, 255);
-    flex-basis: 294px;
+    flex-basis: 290px;
   }
   .item6{
     background-color: rgb(91, 66, 255);
-    flex-basis: 450px;
-    align-self: flex-start;
+    width: 410px;
   }
   .item7{
     background-color: rgb(255, 255, 4);
-    
+    padding: 42px;
   }
 
   .item8{
@@ -59,11 +60,12 @@
   }
   .item9{
     background-color: rgb(9, 193, 37);
-
+    
   }
   
   .item10{
     background-color: bisque;
     align-self: flex-start;
     flex-basis: 50px;
+    height: 170px;
   }
