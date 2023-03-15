@@ -95,7 +95,7 @@ var nama = prompt('Masukkan Nama Anda');
 }
 
 Jankenpon();
-var konfirm;
-while (konfirm = confirm('Ingin Bermain Lagi')){
-    Jankenpon();
+    var ulangi;
+    while (ulangi = confirm('Ingin Bermain Lagi')){
+        Jankenpon();
 }
