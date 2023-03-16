@@ -57,7 +57,3 @@ tasks.addEventListener('click', (e) => {
         e.target.parentElement.parentElement.classList.toggle('completed');
     }
 })
-
-for (var v = 0 ; v < todos.length ; v++){
-    new item(todos[v]);
-}
