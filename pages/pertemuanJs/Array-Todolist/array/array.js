@@ -1001,9 +1001,18 @@ let mahasiswa = [
     { id: 999, name: "Christeen Paris", gender: "M", score: 82 },
   ];
   
-
-for (i = 0 ; i <= mahasiswa.length ; i++){
-    console.log(mahasiswa[i]);
+let genders = mahasiswa.filter(getGenders);
+function getGenders(value, index, array){
+    return value.gender;
 }
+console.log(genders);
+
+console.log("======================================================================")
+
+let male = mahasiswa==gender.filter(getMale);
+function getMale(value, index, array){
+    return value.score;
+}
+console.log(male);
 
 

@@ -74,7 +74,7 @@ body{
 }
 .item.completed p{
     text-decoration: line-through;
-    color: #11111180;
+    color: #00000080;
 }
 .item-btn{
     display: flex;
