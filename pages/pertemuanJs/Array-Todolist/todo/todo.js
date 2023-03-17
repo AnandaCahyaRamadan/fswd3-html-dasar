@@ -6,9 +6,9 @@ if(window.localStorage.getItem("todos") == undefined){
     var todos = [];
     window.localStorage.setItem("todos", JSON.stringify(todos));
 }
+
 var todosEX = window.localStorage.getItem("todos");
 var todos = JSON.parse(todosEX);
-
 
 //add btn disabled
 input.addEventListener('keyup' , () => {
@@ -34,6 +34,7 @@ addBtn.addEventListener('click', () => {
         `
         todos.push(input.value);
         window.localStorage.setItem("todos", JSON.stringify(todos));
+
         tasks.appendChild(newItem);
         input.value = "";
     }
@@ -57,3 +58,4 @@ tasks.addEventListener('click', (e) => {
         e.target.parentElement.parentElement.classList.toggle('completed');
     }
 })
+
