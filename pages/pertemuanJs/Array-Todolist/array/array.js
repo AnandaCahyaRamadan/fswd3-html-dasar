@@ -1008,3 +1008,26 @@ function getGenders(value, index, array){
 console.log(genders);
 
 console.log("======================================================================")
+
+let mahasiswaMaleGender = mahasiswa.filter(cekMale);
+let mahasiswaFemaleGender = mahasiswa.filter(cekFemale);
+
+function cekMale(value, index, array){
+  return value.gender == "M" 
+}
+
+function cekFemale(value, index, array){
+  return value.gender == "F"  
+}
+
+
+function output(){
+  console.log ("Male " , {
+      count: mahasiswaMaleGender.length,
+   } , "\nFemale" ,{
+      count: mahasiswaFemaleGender.length
+   }
+  )
+};
+
+output()
