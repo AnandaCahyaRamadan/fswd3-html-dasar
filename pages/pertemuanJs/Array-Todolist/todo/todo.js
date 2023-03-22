@@ -10,6 +10,7 @@ if(window.localStorage.getItem("todos") == undefined){
 var todosEX = window.localStorage.getItem("todos");
 var todos = JSON.parse(todosEX);
 
+    
 //add btn disabled
 input.addEventListener('keyup' , () => {
     if (input.value.trim() !== 0){
@@ -19,6 +20,7 @@ input.addEventListener('keyup' , () => {
         addBtn.classList.remove('active')
     }
 })
+
 
 //add new task
 addBtn.addEventListener('click', () => {
@@ -34,28 +36,40 @@ addBtn.addEventListener('click', () => {
         `
         todos.push(input.value);
         window.localStorage.setItem("todos", JSON.stringify(todos));
+        fetch('https://crudcrud.com/api/23250d70255c4c108a22262c67aaabb8/mhs', {
+            
+            headers: { "Content-Type": "application/json; charset=utf-8"},
+            method: 'POST',
+            body: JSON.stringify({
+              todos: input.value
+            })
+          })
+          .then(response => response.json())
+          .then(data => console.log(data))
 
-        tasks.appendChild(newItem);
-        input.value = "";
+          tasks.appendChild(newItem);
+          input.value = ""
     }
     else{
         alert('Jangan dikosongi')
     }
 })
 
-//remove iten
+//remove item
 tasks.addEventListener('click', (e) => {
     if(e.target.classList.contains('fa-xmark')){
         e.target.parentElement.parentElement.remove();
         let index = todos.indexOf(name);
         todos.splice(index, 1);
         window.localStorage.setItem("todos", JSON.stringify(todos));
+
     }
 })
 //coret item
 tasks.addEventListener('click', (e) => {
     if(e.target.classList.contains('fa-pen-to-square')){
         e.target.parentElement.parentElement.classList.toggle('completed');
+
     }
 })
 
