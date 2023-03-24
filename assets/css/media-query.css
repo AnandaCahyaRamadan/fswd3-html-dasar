@@ -38,7 +38,7 @@ a {
     margin-right: 10em;
 }
 .jumbotron p {
-    margin-left: 23.5em;
+    margin-left: 24em;
     margin-right: 10em;
 }
 .content {
@@ -81,9 +81,15 @@ a {
     object-fit: cover;
     border-radius: 5px;
     margin-top: 0.1em;
+    
   }
 
-  .head-card h3,p{
+  .card .head-card h3{
+    position: absolute;
+    bottom: 245px;
+    padding-left: 10px;
+  }
+  .head-card p{
     padding-left: 10px;
     bottom: 15%;
   }
@@ -144,5 +150,13 @@ a {
     .home {
         margin: 0;
     }
+    .card .head-card h3{
+        position: relative;
+        bottom: 7%;
+        padding-right: 10px;
+      }
+    .card .head-card p{
+        padding-right: 10px;
+      }
 
   }
